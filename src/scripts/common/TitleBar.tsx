@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { AppBar, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
+// @ts-ignore
 import rcSmall from '../../images/rcSmall.png';
 
 const TitleBar: FC = () => {

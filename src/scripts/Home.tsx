@@ -1,6 +1,7 @@
 import { FC } from "react"
 import TitleBar from "./common/TitleBar"
 import { Chip, Divider, Stack, Typography } from "@mui/material"
+// @ts-ignore
 import rcBig from '../images/rcBig.png'
 
 const Home: FC = () => {
