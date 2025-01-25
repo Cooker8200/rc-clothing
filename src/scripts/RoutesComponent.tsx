@@ -5,7 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 
 const RoutesComponent: FC = () => (
-  <BrowserRouter basename="rc-clothing">
+  <BrowserRouter basename="/">
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
