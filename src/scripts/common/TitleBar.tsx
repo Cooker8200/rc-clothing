@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { AppBar, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material"
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
+import rcSmall from '../../images/rcSmall.png';
 
 const TitleBar: FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -21,7 +22,7 @@ const TitleBar: FC = () => {
   return (
     <AppBar position='static'>
       <Toolbar>
-        <IconButton onClick={handleClick}>
+        <IconButton onClick={handleClick} style={{ marginRight: '12px'}}>
           <MenuIcon />
         </IconButton>
         <Menu
@@ -34,6 +35,7 @@ const TitleBar: FC = () => {
           <MenuItem onClick={() => navigate('/contact')}>Contact Us</MenuItem>
         </Menu>
         <Typography variant='h6'>RC Clothing</Typography>
+        <img src={rcSmall} alt='RC Clothing Logo' width={50} height={50} style={{ paddingBottom: '16px' }}/>
       </Toolbar>
     </AppBar>
   )

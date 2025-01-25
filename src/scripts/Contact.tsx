@@ -6,9 +6,11 @@ const Contact: FC = () => {
   return (
     <>
       <TitleBar />
-      <Stack>
-        <Typography variant='h4'>Contact Us</Typography>
-        <div>Coming soon...</div>
+      <Stack paddingTop={8}>
+      <Typography variant='h3' textAlign='center'>About Us</Typography>
+        <Typography paddingLeft={16} paddingTop={6}>
+          Coming soon...
+        </Typography>
       </Stack>
     </>
   )

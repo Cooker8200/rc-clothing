@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./scripts/Home";
-import About from "./scripts/About";
-import Contact from "./scripts/Contact";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
 
 const RoutesComponent: FC = () => (
   <BrowserRouter basename="rc-clothing">

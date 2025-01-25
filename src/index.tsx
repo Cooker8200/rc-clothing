@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import RoutesComponent from './RoutesComponent';
+import RoutesComponent from './scripts/RoutesComponent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

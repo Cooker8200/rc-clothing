@@ -1,26 +1,29 @@
 import { FC } from "react"
 import TitleBar from "./common/TitleBar"
 import { Chip, Divider, Stack, Typography } from "@mui/material"
+import rcBig from '../images/rcBig.png'
 
 const Home: FC = () => {
   return (
     <>
       <TitleBar />
       <Stack spacing={2}>
-        <Typography variant='h2' textAlign='center'>
-          RC Clothing
-        </Typography>
-        <img src='src/images/rc-big.png' alt='RC Clothing Logo' height={250} width={250} />
+        <Stack direction='row' justifyContent='center' alignItems='center'>
+          <img src={rcBig} alt='RC Clothing Logo' height={250} width={250} style={{ zIndex: '-5000'}}/>
+          <Typography variant='h2'>
+            RC Clothing
+          </Typography>
+        </Stack>
         <Typography textAlign='center'>
-          Your slogan here
+          Insert Company Slogan
         </Typography>
         <Divider style={{ paddingTop: '24px', paddingBottom: '24px' }}>
           <Chip label='Designs' size='small' />
         </Divider>
         <Stack direction='row' justifyContent='center' spacing={6}>
-          <Typography>image 1</Typography>
-          <Typography>image 2</Typography>
-          <Typography>image 3</Typography>
+          <Typography>Clothing Option</Typography>
+          <Typography>Clothing Option</Typography>
+          <Typography>Clothing Option</Typography>
         </Stack>
       </Stack>
     </>
