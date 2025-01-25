@@ -2,7 +2,7 @@ import { FC } from "react"
 import TitleBar from "./common/TitleBar"
 import { Chip, Divider, Stack, Typography } from "@mui/material"
 
-const Main: FC = () => {
+const Home: FC = () => {
   return (
     <>
       <TitleBar />
@@ -27,4 +27,4 @@ const Main: FC = () => {
   )
 }
 
-export default Main
+export default Home
